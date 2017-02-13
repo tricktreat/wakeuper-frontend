@@ -1,0 +1,14 @@
+<!--pages/login/login.wxml-->
+<view class="container">
+<view class="userinfo-avatar"></view>
+  <view class="input">
+    <input placeholder="请输入账号" bindinput="inputuserid" />
+  </view>
+  <view class="divider"></view>
+  <view class="input">
+
+    <input placeholder="请输入密码" password="{{true}}" bindinput="inputpassword"/>
+  </view>
+  <button bindtap="loginbtn" style="width:80%;background-color:#6755c8;color:white;height:34px;font-size:15px;margin-top:20px">登 录</button>
+   <button catchtap="btn" style="width:80%;background-color:#6755c8;color:white;height:34px;font-size:15px;margin-top:20px">登 录</button>
+</view>

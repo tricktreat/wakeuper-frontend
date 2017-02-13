@@ -1,0 +1,16 @@
+.container{
+}
+
+.check-pg{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top:80px;
+    left:55px
+}
+
+.days{
+    font-size: 30px;
+    color: darkorchid;
+    margin-top: 190px
+}

@@ -1,0 +1,46 @@
+{
+  "pages": [
+    
+    "pages/index/index",
+    "pages/checked/checked",
+    "pages/circle/circle",
+    "pages/login/login"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#6755c8",
+    "navigationBarTitleText": "WakeupFamily",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": "true"
+  },
+  "tabBar": {
+    "color": "#888888",
+    "selectedColor": "#6755c8",
+    "borderStyle": "white",
+    "backgroundColor": "white",
+    "list": [
+      {
+        "iconPath": "images/tab/1.2.png",
+        "selectedIconPath": "images/tab/1.1.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "iconPath": "images/tab/2.2.png",
+        "selectedIconPath": "images/tab/2.1.png",        
+        "pagePath": "pages/checked/checked",
+        "text": "早起"
+      },
+      {
+        "iconPath": "images/tab/3.2.png",
+        "selectedIconPath": "images/tab/3.1.png",        
+        "pagePath": "pages/circle/circle",
+        "text": "广场"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  }
+}

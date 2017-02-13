@@ -1,0 +1,14 @@
+
+<!--pages/checked/checked.wxml-->
+
+<!--<view class="container">
+  <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+  <text class="userinfo-nickname">欢迎你！{{userInfo.nickName}}</text>
+  <text class="tip">『早起签到』正在开垦中...</text>
+  <image src="/images/farmer.gif" style="height:40px;width:40px"></image>
+</view>-->
+<view class="container">
+<text>本月签到</text>
+<text class="days">{{userInfo.count}}天</text>
+  <canvas class="check-pg" canvas-id="firstCanvas"></canvas>
+</view>
