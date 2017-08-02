@@ -1,0 +1,94 @@
+/* pages/jwxx/jwxx.wxss */
+page{
+  height: 0rpx;
+}
+.kcitem0{
+  background: salmon;
+  width: 100%;
+  padding: 10rpx;
+  justify-content: flex-start;
+}
+
+.kcitem1{
+  background: darkseagreen;
+  width: 100%;
+  padding: 10rpx;
+  justify-content: flex-start;
+}
+
+.kcitem2{
+  background: skyblue;  
+  width: 100%;
+  padding: 10rpx;
+  justify-content: flex-start;
+}
+
+.kcmc{
+  font-weight: 600;
+  color: white;
+  margin: 5rpx;
+  font-size: 16px;
+}
+
+.kcinfo{
+  color: seashell;
+  font-size: 14px;
+  margin: 5rpx;
+  
+}
+
+
+
+
+
+.top {
+  background: gainsboro;
+  display: flex;
+  flex-direction: row;
+  margin-left: 35rpx;
+  color: black;
+}
+
+.top-text {
+  width: 100rpx;
+  height: 35rpx;
+  font-size: 9pt;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.scroll {
+  height: 1000rpx;
+}
+
+.left {
+  width: 35rpx;
+  height: 100rpx;
+  font-size: 9pt;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+.kcb-item {
+    width: 95rpx;
+  height: 100px;
+  overflow:hidden;
+  position: absolute;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.smalltext {
+  font-size: 8pt;
+  color: #fff;
+  padding-left: 2px;
+}
+
+

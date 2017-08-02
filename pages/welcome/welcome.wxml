@@ -1,0 +1,63 @@
+<!--pages/welcome/welcome.wxml-->
+<view class="container">
+
+  <form bindsubmit="setInfo" style="width:100%">
+    <view class="divider"></view>
+    <view class="section">
+      <view class="section_title">姓名</view>
+      <input class="section_content" name="name" />
+    </view>
+    <view class="divider"></view>
+    <view class="divider"></view>
+    <view class="section">
+      <view class="section_title">学号</view>
+      <input class="section_content" name="studentid" />
+    </view>
+
+    <view class="divider"></view>
+    <view class="section">
+      <view class="section_title">手机</view>
+      <input class="section_content" name="phone" />
+    </view>
+    <view class="divider"></view>
+
+    <view class="section">
+      <view class="section_title">性别</view>
+      <picker class="section_content" mode="selector" value="{{info.sex}}" range="{{sex}}" data-item="sex" bindchange="selectorInput" name="sex">
+        {{info.sex}}
+      </picker>
+    </view>
+
+    <view class="divider"></view>
+
+    <view class="section">
+      <view class="section_title">校区</view>
+      <picker class="section_content" mode="selector" value="{{info.campus}}" range="{{campus}}" data-item="campus" bindchange="selectorInput" name="campus">
+        {{info.campus}}
+      </picker>
+    </view>
+    <view class="divider"></view>
+    <view class="section">
+      <view class="section_title">学院</view>
+      <picker class="section_content" mode="selector" value="{{info.school}}" range="{{school}}" data-item="school" bindchange="selectorInput" name="school">
+        {{info.school}}
+      </picker>
+    </view>
+    <view class="divider"></view>
+    <view class="section">
+      <view class="section_title">选填</view>
+      <textarea class="section_content" style="height:150rpx;" name="other" placeholder="了解我们的途径、加入社团的理由、或者其他想说的话" />
+    </view>
+
+    <view class="divider"></view>
+    <view class="btn-area ">
+      <button class="btn_1" formType="submit">加入社团</button>
+    </view>
+  </form>
+
+  <text class="tip" style="margin:20rpx;margin-bottom:5rpx;font-size:13px">○ 如果注册遇到问题，请联系社长。</text>
+  <text class="tip" style="margin:5rpx;font-size:13px">○ 你的联系方式将用来通知社团的后续活动，请确保联系方式准确无误，若信息有变动，请联系18862196504（杨增）进行更改。</text>
+  <text class="tip" style="margin:5rpx;font-size:13px">○ 床协QQ主页号3173396816，社长联系方式：18896590313（王伟杰） 18862398390（杨越） 18862196504（杨增）</text>
+
+
+</view>

@@ -1,0 +1,34 @@
+/* pages/rankinfo/rankinfo.wxss */
+.rank{
+  height:100rpx;
+  width: 700rpx;
+  display: flex;
+  flex-direction: row;
+  border-radius: 50rpx;
+  border: #f7982a solid 5rpx;
+  color:black;
+  font-size: 14px;
+  margin: 15rpx;
+}
+
+.avatar{
+  height: 100rpx;
+  width: 100rpx;
+  border-radius: 50rpx;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  margin: 15rpx 0rpx 15rpx 70rpx;
+  justify-content: space-around;
+
+}
+
+.nickname{
+  font-size: 16px;
+}
+
+.signtime{
+  font-size: 12px;
+}

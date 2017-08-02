@@ -1,116 +1,25 @@
 <view class="container">
-  <swiper class="swiper" autoplay="true" interval="3000" duration="1000" circular="true">
+  <swiper class="swiper" autoplay="true" indicator-dots="true" interval="2500" duration="2000" circular="true">
     <block wx:for="{{imgUrls}}">
-      <swiper-item class="swiper-item">
-        <image src="{{item}}" class="slide-image" />
-        <view class="slide-text">
-          <text>{{index}}</text>
-        </view>
+      <swiper-item>
+        <image src="{{item.imgurl}}" class="slide-image" mode="aspectFill" />
       </swiper-item>
     </block>
   </swiper>
-  <image src="/images/line.png" class="divider-ima" />
-  <view class="item1">
-    <view class="title1" catchtap="showitem1">
-      <text>新年心愿墙</text>
-    </view>
-    <view class="content" hidden="{{item1show}}">
-      <view class="post">
-        <view class="user">
-          <image src="/images/nancy.jpg" class="avator"></image>
-          <text>南溪</text>
-        </view>
-        <view class="main">
-          新的一年，希望自己更努力一点，希望家人快快乐乐，希望能遇见更多有趣的人，希望wakeup俱乐部继续进步，我们继续成长！
-        </view>
-      </view>
-      <view class="post">
-        <view class="user">
-          <image src="/images/avator.jpg" class="avator"></image>
-          <text>Wakeup俱乐部</text>
-        </view>
-        <view class="main">
-          金猴呈祥辞旧岁，雄鸡纳福迎新春！感谢你在2016年给予wakeup俱乐部的陪伴和支持。希望在新的一年里，你能够不负韶光，继续努力！
-        </view>
-      </view>
-      <view class="post" hidden="{{mypost}}">
-        <view class="user">
-          <image src="{{userInfo.headURL}}" class="avator"></image>
-          <text>{{userInfo.name}}</text>
-        </view>
-        <view class="main">
-          {{inputValue}}
-        </view>
-      </view>
-      <view class="new-send">
-        <view class="send">
-          <input bindinput="bindKeyInput" placeholder="分享你的新年愿望吧！" />
-        </view>
-        <view>
-          <button class="btn-send" catchtap="sendmypost">发送</button>
-        </view>
-      </view>
-    </view>
+  <view class="indexmenu">
+    <block wx:for="{{indexmenu}}">
+      <navigator url="{{item.url}}" class="menu-item">
+        <image src="{{item.icon}}" class="menu-item-image" mode="aspectFit"></image>
+        <text>{{item.text}}</text>
+      </navigator>
+    </block>
   </view>
-  <view class="item1">
-    <view class="title1" catchtap="showitem2">
-      <text> 早起光荣榜 </text>
-    </view>
-    <view class="content" hidden="{{item2show}}">
-      <block wx:for="{{rankdata}}">
-        <view class="rank-item">
-          <image src="/images/flower.png" class="flower"></image>
-          <image src="{{item.headURL}}" class="headimg"></image>
-          <text>{{item.name}}</text>
-          <text>{{item.count}}</text>
-        </view>
-      </block>
-      <view class="btngroup">
-        <button class="btn-rank" bindtap="allrank">总榜</button>
-        <button class="btn-rank" bindtap="monthrank">月榜</button>
-      </view>
-    </view>
-  </view>
-  <view class="item1">
-    <view class="title1" catchtap="showitem3">
-      <text> 成员风采 </text>
-    </view>
-    <view class="content" hidden="{{item3show}}">
-      <view class="intro-item" wx:for="{{rankdata}}">
-        <image src="{{item.headURL}}" class="photo"></image>
-        <view class="ele">
-          <image style="width:14px;height:14px" src="/images/flower.png" class="ele-ima"></image>
-          <image style="width:14px;height:14px" src="/images/flower.png" class="ele-ima"></image>
-          <image style="width:14px;height:14px" src="/images/flower.png" class="ele-ima"></image>
-        </view>
-        <view class="info">
-          <view class="info-text">
-            <text>{{item.name}}</text>
-          </view>
-          <view class="info-text">
-            <text>{{item.phone}}</text>
-          </view>
-          <view class="info-text">
-            <text>{{item.signature}}</text>
-          </view>
-        </view>
-      </view>
-    </view>
-  </view>
-  <view class="item1">
-    <view class="title1" catchtap="showitem4">
-      <text> 联系我们 </text>
-    </view>
-    <view class="content" hidden="{{item4show}}">
-      <text>这里是联系我们，这里是联系我们，这里是联系我们，这里是联系我们，这里是联系我们，这里是联系我们，这里是联系我们，这里是联系我们，这里是联系我们，这里是联系我们，这里是联系我们。</text>
-    </view>
-  </view>
-  <view class="item1">
-    <view class="title1" catchtap="showitem5">
-      <text> 关于社团 </text>
-    </view>
-    <view class="content" hidden="{{item5show}}">
-      <text>这里是关于社团，这里是关于社团，这里是关于社团，这里是关于社团，这里是关于社团，这里是关于社团，这里是关于社团，这里是关于社团，这里是关于社团，这里是关于社团，这里是关于社团。</text>
-    </view>
-  </view>
+  <swiper class="broadcast" interval="4000" autoplay="true"  duration="4000" circular="true">
+    <block wx:for="{{broadcast}}">
+      <swiper-item class="broadcast-item">
+        <image src="/images/tongzhi.png" mode="aspectFit" class="broadcast-icon"></image>
+        <text class="broadcast-content">{{item.nickname}}：{{item.content}}</text>
+      </swiper-item>
+    </block>
+  </swiper>
 </view>

@@ -1,0 +1,30 @@
+<!--pages/addbroadcast/addbroadcast.wxml-->
+<view class="container">
+  <form class="add-form" bindsubmit="bindFormSubmit">
+    <textarea bindinput="countinput" class="broadcast-content" name="content" maxlength="80" />
+    <text class="tip">○ 还可以输入{{80-count}}个字</text>
+    <text class="tip">○ 发送的广播会出现在主界面的下方</text>
+    <button class="btn_1" form-type="submit">发送</button>
+  </form>
+
+  <view class="title" >
+    · 我发送的广播 ·
+  </view>
+  <scroll-view scroll-y="true" style="width:95%;height:600rpx;">
+
+    <view wx:for="{{mybroadcast}}" class="mybroadcast">
+      <view class="content">
+        {{item.content}}
+      </view>
+      <view class="bottom">
+        <view class="time">
+          {{item.createtime}}
+        </view>
+        <view bindtap="delBroadcast" class="delbroadcast" data-id="{{item.id}}" data-index="{{index}}">
+          删除
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+
+</view>

@@ -1,0 +1,47 @@
+<view class="container">
+  <view class="header">
+    <image class="avatarbg" style="box-shadow:0 0 30px 10px rgba(255,255,255,.7) inset;" mode="aspectFill" src="{{userInfo.avatarUrl}}"></image>
+    <image class="avatar" mode="aspectFill" src="{{userInfo.avatarUrl}}"></image>
+    <view class="nickname">
+      {{userInfo.nickName}}
+    </view>
+    <view class="motto" bindtap="setInfo" >
+      {{!userInfo.motto?"未设置签名":userInfo.motto}}
+    </view>
+  </view>
+  <view class="info" bindtap="setInfo" >
+    <image src="/images/Shape-136.png" class="info-icon" mode="aspectFit"></image>
+    <text class="info-txt">{{!userInfo.name?"未设置真实姓名":userInfo.name}}</text>
+  </view>
+  <view class="divider"></view>
+  <view class="info" bindtap="setInfo" >
+    <image src="/images/Shape-136.png" class="info-icon" mode="aspectFit"></image>
+    <text class="info-txt">{{!userInfo.campus?"未设置校区信息":userInfo.campus}}</text>
+  </view>
+  <view class="divider"></view>
+  <view class="info" bindtap="setInfo" >
+    <image src="/images/Shape-136.png" class="info-icon" mode="aspectFit"></image>
+    <text class="info-txt">{{!userInfo.school?"未设置学院信息":userInfo.school}}</text>
+  </view>
+  <view class="divider"></view>
+  <view class="info" bindtap="setInfo" >
+    <image src="/images/Shape-136.png" class="info-icon" mode="aspectFit"></image>
+    <text class="info-txt">{{!userInfo.birthday?'未设置生日信息':userInfo.birthday}}</text>
+  </view>
+  <view class="divider"></view>
+  <view class="info" bindtap="setInfo" >
+    <image src="/images/Shape-136.png" class="info-icon" mode="aspectFit"></image>
+    <text class="info-txt">签到天数：86天</text>
+  </view>
+
+
+  <!-- <view class="motto" style="margin-top:30rpx">
+    <image src="/images/Shape-109.png" class="info-icon" mode="aspectFit"></image>
+    <text class="motto-txt">向我们提建议</text>
+  </view> -->
+
+  <!-- <view class="btn_fixed">
+    <image style="height:100rpx;width:100rpx" bindtap="setInfo" src="/images/btn_info.png" mode="scaleToFill">
+    </image>
+  </view> -->
+</view>

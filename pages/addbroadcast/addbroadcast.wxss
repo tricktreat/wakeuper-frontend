@@ -1,0 +1,45 @@
+/* pages/addbroadcast/addbroadcast.wxss */
+
+.add-form {
+  width: 95%;
+  margin-top: 10rpx;
+}
+
+.broadcast-content {
+  display: flex;
+  height: 300rpx;
+  width: 100%;
+  border-bottom: 5rpx #f7982a solid;
+}
+
+.title {
+  font-size: 16px;
+  margin: 30rpx 20rpx 10rpx;
+  padding-bottom: 15rpx;
+  border-bottom: 3rpx #f7982a solid;
+}
+
+.mybroadcast {
+  margin: 5rpx;
+  padding: 20rpx;
+  background: #85b8cf;
+  border-radius: 10rpx;
+}
+
+.content {
+  color: white;
+  font-size: 14px;
+  margin: 15rpx;
+}
+
+.bottom {
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  font-size: 14rpx;
+}
+
+.delbroadcast {
+  color: blue;
+  text-decoration: underline;
+}

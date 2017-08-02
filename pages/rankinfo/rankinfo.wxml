@@ -1,0 +1,14 @@
+<!--pages/rankinfo/rankinfo.wxml-->
+<view class="container">
+  <view class="" wx:for="{{rankinfo}}">
+    <view class="rank">
+      <image class="avatar" src="{{item.avatarurl}}"></image>
+      <view class="info">
+        <view class="nickname">
+          {{item.nickname}}</view>
+        <view class="signtime">
+          {{item.signtime}}</view>
+      </view>
+    </view>
+  </view>
+</view>

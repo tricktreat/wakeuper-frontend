@@ -1,0 +1,5 @@
+/* pages/about/about.wxss */
+page{
+  background: #f0f0f0;
+}
+

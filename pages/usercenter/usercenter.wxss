@@ -1,0 +1,30 @@
+page {
+  background: #f0f0f0;
+  height: 100%;
+}
+
+
+
+.info {
+  padding: 15rpx;
+  box-sizing: border-box;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  color: grey;
+  font-size: 14px;
+  border-left: #f7982a solid 10rpx;
+  width: 100%;
+}
+
+.info-icon {
+  margin: 10rpx 20rpx;
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.info-txt {
+  display: inline-block;
+  width: 70%;
+  margin-left: 80rpx;
+}

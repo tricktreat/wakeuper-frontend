@@ -1,0 +1,14 @@
+/* pages/signrecord/signrecord.wxss */
+.title{
+  color: black;
+  border-bottom: 5rpx solid #f7982a;
+  padding:15rpx;
+  margin: 15rpx;
+  font-size: 18px;
+}
+
+.signtime{
+  color: gray;
+  font-size: 14px;
+  margin: 10rpx;
+}

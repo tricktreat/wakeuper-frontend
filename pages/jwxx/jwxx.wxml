@@ -1,0 +1,52 @@
+<!--pages/jwxx/jwxx.wxml-->
+<!-- <view class="top-tab">
+  <view bindtap="bindLessons" data-activate="1" class="item {{activate==1?'activate1':''}}">
+    今日课程
+  </view>
+  <view bindtap="bindGrades" data-activate="2" class="item {{activate=='2'?'activate2':''}}">
+    我的成绩
+  </view>
+</view>
+<view style="height:130rpx"></view>
+<view class="container">
+  <block wx:for="{{kc}}">
+    <view class="kcitem{{index%3}}">
+      <view class="kcmc">{{item.coursename}}</view>
+      <view class="kcinfo">{{item.jsxm}}</view>
+      <view class="kcinfo">{{item.jxdd}}</view>
+      <view class="kcinfo">{{item.qsz}}</view>
+    </view>
+    <view class="divider"></view>
+  </block>
+</view> -->
+<view class="top-tab">
+<view class="item" bindtap="preWeek">上一周</view>
+<view class="circle">{{week}}</view>
+<view class="item" bindtap="nextWeek">下一周</view>
+
+</view>
+<view style="background:gainsboro">
+  <view class="top">
+    <view wx:for="{{['一','二','三','四','五','六','日']}}" class="top-text">周{{item}}</view>
+  </view>
+</view>
+
+<scroll-view scroll-y="true" class="scroll">
+  <view style="height:1100rpx;width:100%;display:flex;flex-direction:row">
+    <view style="background-color:gainsboro;color:black;display:flex;flex-direction:column;">
+      <view wx:for="{{[1,2,3,4,5,6,7,8,9,10,11]}}" class="left">
+        {{item}}
+      </view>
+    </view>
+
+    <view wx:for="{{[1,2,3,4,5,6,7,8,9,10,11]}}">
+      <view style="width:100%;margin-top:{{(index+1)*100}}rpx;  position: absolute;border-bottom:1rpx solid lightgray;">
+      </view>
+    </view>
+    <view wx:for="{{kcxx.wlist}}">
+      <view class="kcb-item" bindtap="showCardView" data-statu="open" data-index="{{index}}" style="margin-left:{{(item.xqj-1)*100}}rpx;margin-top:{{(item.skjc-1)*100+5}}rpx;height:{{item.skcd*100-5}}rpx;background-color:{{colorArrays[index%9]}}">
+        <view class="smalltext">{{item.kcmc}}@{{item.skdd}}</view>
+      </view>
+    </view>
+  </view>
+</scroll-view>

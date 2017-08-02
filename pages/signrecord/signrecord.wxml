@@ -1,0 +1,17 @@
+<!--pages/signrecord/signrecord.wxml-->
+<view class="container">
+  <view class="header">
+    <image class="avatarbg" style="box-shadow:0 0 30px 10px rgba(255,255,255,.7) inset;" mode="aspectFill" src="{{userInfo.avatarUrl}}"></image>
+    <image class="avatar" mode="aspectFill" src="{{userInfo.avatarUrl}}"></image>
+    <view class="nickname">
+      {{userInfo.nickName}}
+    </view>
+    <view class="motto">
+      {{!userInfo.motto?"未设置签名":userInfo.motto}}
+    </view>
+  </view>
+  <view class="title">· 我的打卡记录 ·</view>
+  <view wx:for="{{signrec}}" class="">
+    <view class="signtime"> {{item.signtime}}  星期{{item.day}}</view>
+  </view>
+</view>
