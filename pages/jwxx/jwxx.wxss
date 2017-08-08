@@ -1,7 +1,5 @@
 /* pages/jwxx/jwxx.wxss */
-page{
-  height: 0rpx;
-}
+
 .kcitem0{
   background: salmon;
   width: 100%;
@@ -37,10 +35,6 @@ page{
   
 }
 
-
-
-
-
 .top {
   background: gainsboro;
   display: flex;
@@ -75,6 +69,8 @@ page{
 
 
 .kcb-item {
+  top:0;
+  left:35rpx;
     width: 95rpx;
   height: 100px;
   overflow:hidden;

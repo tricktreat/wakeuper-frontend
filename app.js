@@ -17,6 +17,7 @@ App({
               url: 'https://www.ibilidi.cn/getOpenid',
               complete: function (res) {
                 that.globalData.userInfo.openid = res.data.openid
+                that.globalData.userInfo.sessionkey = res.data.session_key                
                 that.registerUser()
               }
             })
@@ -56,8 +57,8 @@ App({
   signIn: function () {
     var that = this
     var time = new Date()
-    time.getHours() == 6 || (time.getHours() == 7 && time.getMinutes() <= 20)
-    if (1) {
+    
+    if (time.getHours() == 6 || (time.getHours() == 7 && time.getMinutes() <= 20)) {
       wx.request({
         url: 'https://www.ibilidi.cn/getLastSignTime',
         data: { openid: this.globalData.userInfo.openid, offset:0,n: 1 },

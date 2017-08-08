@@ -1,7 +1,8 @@
 /**app.wxss**/
 
 page {
-  height: 0;
+  width: 750rpx;
+  height: 100%;
   background: #f0f0f0;
 }
 
@@ -13,9 +14,11 @@ page {
   align-items: center;
   -webkit-align-items: center;
   box-sizing: border-box;
+  position: relative;
 }
 
 /* 轮播图 */
+
 .swiper {
   width: 100%;
   height: 474rpx;
@@ -27,12 +30,14 @@ page {
 }
 
 /* 分割线 */
+
 .divider {
   width: 100%;
   border: #f0f0f0 solid 0.5rpx;
 }
 
 /* 表单小贴士 */
+
 .tip {
   margin: 15rpx;
   font-size: 11px;
@@ -61,15 +66,13 @@ page {
   position: fixed;
   bottom: 20rpx;
   border-radius: 50rpx;
-
-  margin:auto;
-  left:0;
-  right:0;
-
+  margin: auto;
+  left: 0;
+  right: 0;
 }
 
-
 /* 顶部tab */
+
 .top-tab {
   justify-content: center;
   margin: 30rpx 10%;
@@ -78,21 +81,22 @@ page {
 }
 
 .circle {
-  color:white;
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   position: absolute;
+  left: 350rpx;
   height: 50rpx;
   width: 50rpx;
   border-radius: 25rpx;
   border: #f7982a solid 1px;
-  background: #f7982a
+  background: #f7982a;
 }
 
 .top-tab .item {
   font-size: 16px;
-  height: 50rpx;  
+  height: 50rpx;
   background: cornsilk;
   display: flex;
   align-items: center;
@@ -131,6 +135,7 @@ page {
 }
 
 /* 文章和modal */
+
 .article {
   background: white;
   border-bottom-right-radius: 10rpx;
@@ -167,6 +172,7 @@ page {
 }
 
 /* 表单条目 */
+
 .section {
   justify-content: space-between;
   align-items: center;
@@ -189,7 +195,6 @@ page {
   font-size: 15px;
 }
 
-
 /* 用户头像和昵称显示 */
 
 .header {
@@ -209,8 +214,8 @@ page {
 }
 
 .header  .avatarbg {
-  -webkit-filter: blur(6px);
-  filter: blur(6px);
+  -webkit-filter: blur(4px);
+  filter: blur(4px);
   width: 100%;
   height: 400rpx;
 }
@@ -221,17 +226,18 @@ page {
   justify-content: center;
   position: absolute;
   top: 280rpx;
- width: 100%;
+  width: 100%;
   color: white;
   font-size: 18px;
 }
-.header  .motto{
+
+.header  .motto {
   display: flex;
   align-items: center;
   justify-content: center;
-color: white;
-font-size: 12px;
- position: absolute;
+  color: white;
+  font-size: 12px;
+  position: absolute;
   top: 330rpx;
-   width: 100%
+  width: 100%;
 }

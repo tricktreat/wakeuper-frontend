@@ -22,7 +22,8 @@
 
 .menu-item-image{
   margin-bottom:20rpx;
-  width: 75%;
+  height:75rpx;
+  width: 75rpx;
 }
 
 

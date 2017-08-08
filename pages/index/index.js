@@ -26,8 +26,8 @@ Page({
 
       {
         'icon': '../../images/icon_07.png',
-        'text': '成员风采',
-        'url': '../member/member'
+        'text': '我爱运动',
+        'url': '../line/line'
       },
       {
         'icon': '../../images/icon_05.png',
@@ -50,6 +50,7 @@ Page({
   },
   onShow: function () {
     this.initData()
+
   },
   initData: function () {
     var that = this

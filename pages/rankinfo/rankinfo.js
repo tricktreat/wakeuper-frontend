@@ -12,6 +12,9 @@ Page({
 
   onLoad: function (options) {
     this.initData()
+
+
+
   },
   initData: function () {
     this.setData({ userInfo: app.globalData.userInfo })

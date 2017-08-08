@@ -12,19 +12,20 @@
     "pages/cooperate/cooperate",
     "pages/wakeup/wakeup",
     "pages/signrecord/signrecord",
-    "pages/rankinfo/rankinfo"
+    "pages/rankinfo/rankinfo",
+    "pages/line/line"    
   ],
   "window": {
     "backgroundTextStyle": "white",
     "navigationBarBackgroundColor": "#f7982a",
-    "navigationBarTitleText": "WE，苏大人",
+    "navigationBarTitleText": "WakeUp俱乐部",
     "navigationBarTextStyle": "white"
   },
   "tabBar": {
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "在SUDA",
+        "text": "在社团",
         "iconPath": "images/biaoxing.png",
         "selectedIconPath": "images/biaoxingfill.png"
       },

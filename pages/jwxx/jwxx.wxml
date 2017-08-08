@@ -40,7 +40,7 @@
     </view>
 
     <view wx:for="{{[1,2,3,4,5,6,7,8,9,10,11]}}">
-      <view style="width:100%;margin-top:{{(index+1)*100}}rpx;  position: absolute;border-bottom:1rpx solid lightgray;">
+      <view style="width:100%;margin-top:{{(index+1)*100}}rpx; top:0; position: absolute;border-bottom:1rpx solid lightgray;">
       </view>
     </view>
     <view wx:for="{{kcxx.wlist}}">

@@ -7,12 +7,10 @@
     </block>
   </swiper>
   <view class="indexmenu">
-    <block wx:for="{{indexmenu}}">
-      <navigator url="{{item.url}}" class="menu-item">
+      <navigator wx:for="{{indexmenu}}" url="{{item.url}}" class="menu-item">
         <image src="{{item.icon}}" class="menu-item-image" mode="aspectFit"></image>
         <text>{{item.text}}</text>
       </navigator>
-    </block>
   </view>
   <swiper class="broadcast" interval="4000" autoplay="true"  duration="4000" circular="true">
     <block wx:for="{{broadcast}}">
