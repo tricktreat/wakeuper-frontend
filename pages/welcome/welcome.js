@@ -1,4 +1,6 @@
 // pages/welcome/welcome.js
+var app = getApp()
+var util = require("../../utils/util.js")
 Page({
 
   data: {
@@ -34,6 +36,11 @@ Page({
 
 
   setInfo: function (e) {
+
+  
+
+    var fId = e.detail.formId;
+    var fObj = e.detail.value;
     var value = e.detail.value;
     // 判断输入合法性
     if (value.name == '' || value.studentid == '' || value.studentid.length!=10|| value.phone == '' || value.sex == '未选择性别' || value.campus == '未选择校区' || value.school == '未选择学院') {
@@ -51,9 +58,51 @@ Page({
         complete:function(e){
           console.log(e)
           wx.showToast({
-            image: '../../images/yonghufill.png',
+            mask: true,
+            icon:"success",
             title: 'success!\r\n欢迎加入wakeup俱乐部。',
             complete:function(){
+
+             
+              wx.request({
+                url: 'https://www.ibilidi.cn/getAccessToken',
+                method: 'GET',
+                success: function (a) {
+                  wx.request({
+                    url: 'https://api.weixin.qq.com/cgi-bin/message/wxopen/template/send?access_token=' + a.data.rows[0].access_token,
+                    method: 'POST',
+                    data: {
+                      "touser": app.globalData.userInfo.openid,
+                      "template_id": "RfvKyzClcCqZhmBaaN5fHMGG7by60HV32Ffr7_BmM9c",
+                      "page": "index",
+                      "form_id": fId,
+                      "data": {
+                        "keyword1": {
+                          "value": "苏州大学wakeup俱乐部",
+                          "color": "#173177"
+                        },
+                        "keyword2": {
+                          "value": app.globalData.userInfo.nickName,
+                          "color": "#173177"
+                        },
+                        "keyword3": {
+                          "value": util.formatTime(new Date()),
+                          "color": "#173177"
+                        },
+                        "keyword4": {
+                          "value": "欢迎加入wakeup俱乐部迎新群（658600211）",
+                          "color": "#173177"
+                        }
+                      },
+                      "emphasis_keyword": "keyword2.DATA"
+                    },
+                    complete: function (e) {
+                      console.log(e)
+                    }
+                  })
+                }
+              })
+
               setTimeout(function(){
                 wx.switchTab({
                   url: '../index/index',
@@ -75,5 +124,10 @@ Page({
     this.data.info[array] = value
     var temp = this.data.info
     this.setData({ info: temp })
+  },
+  onShareAppMessage: function () {
+    return {
+      title: "欢迎加入wakeup俱乐部"
+    }
   }
 })

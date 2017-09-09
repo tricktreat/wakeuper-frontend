@@ -1,7 +1,7 @@
 <!--pages/setinfo/setinfo.wxml-->
 <view class="container">
 
-  <form bindsubmit="setInfo" style="width:100%">
+  <form bindsubmit="setInfo" report-submit style="width:100%">
     <view class="section">
       <view class="section_title">姓名</view>
       <input class="section_content" name="name" placeholder="{{!userInfo.name?'未设置姓名':''}}" value="{{userInfo.name}}" />

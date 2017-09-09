@@ -33,9 +33,6 @@ Page({
         that.setData({ signrec: e.data.rows })
       }
     })
-  },
-  getDay: function () {
-
-    that.setData({ signrec: temp })
   }
+
 })

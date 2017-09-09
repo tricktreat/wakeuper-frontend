@@ -13,7 +13,9 @@
     "pages/wakeup/wakeup",
     "pages/signrecord/signrecord",
     "pages/rankinfo/rankinfo",
-    "pages/line/line"    
+    "pages/line/line",
+    "pages/lessons/lessons",
+    "pages/kcqdinfo/kcqdinfo"    
   ],
   "window": {
     "backgroundTextStyle": "white",

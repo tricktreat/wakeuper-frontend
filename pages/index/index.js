@@ -36,8 +36,8 @@ Page({
       },
       {
         'icon': '../../images/icon_03.png',
-        'text': '对外合作',
-        'url': '../cooperate/cooperate'
+        'text': '课程考勤',
+        'url': '../lessons/lessons'
       },
       {
         'icon': '../../images/icon_09.png',
@@ -55,7 +55,6 @@ Page({
   initData: function () {
     var that = this
     wx.request({
-      data:{n:3},
       url: 'https://www.ibilidi.cn/getBroadcast/allBroadcast',
       success: function (res) {
        that.setData({ broadcast: res.data.rows });
@@ -68,7 +67,9 @@ Page({
       }
     });
   },
-  onShareAppMessage:function(){
-    title:"苏州大学wakeup俱乐部"
+  onShareAppMessage: function () {
+    return {
+      title: "苏州大学wakeup俱乐部"
+    }
   }
 })

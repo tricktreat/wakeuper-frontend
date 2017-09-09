@@ -20,6 +20,7 @@ Page({
   },
 
   bindFormSubmit: function (e) {
+    if (e.detail.value.content){
     this.setData({ content: e.detail.value.content })
     wx.request({
       url: 'https://www.ibilidi.cn/addBroadcast',
@@ -45,6 +46,13 @@ Page({
         })
       }
     })
+    }else{
+      wx.showModal({
+        showCancel: false,                        
+        title: '操作失败',
+        content: '发送消息为空！',
+      })
+    }
   },
   getMyBroadcast:function(){
     var that=this

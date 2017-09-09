@@ -1,0 +1,29 @@
+<!--pages/kcqdinfo/kcqdinfo.wxml-->
+<view class="container">
+  <view class="title">
+    <view>{{kcxx.kcmc}}({{kcxx.kcdm}})
+    </view>
+    <view>{{kcxx.qddd?kcxx.qddd:'地点未知'}}-{{kcxx.jsxm}}
+    </view>
+  </view>
+  
+  <view class="title" wx:if="{{info.length}}">
+    
+  </view>
+
+
+  <view class="" wx:for="{{info}}">
+    <view class="item">
+      <view class="">
+        {{item.xh}}
+      </view>
+      <view class="">
+        {{item.xm}}
+      </view>
+      <view class="">
+        {{item.qdsj}}
+      </view>
+    </view>
+  </view>
+  <text style=' position:fixed;bottom:40rpx;color:gray;font-size:14px;'>界面正在开发之中....</text>
+</view>

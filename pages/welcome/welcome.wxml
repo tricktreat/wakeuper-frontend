@@ -1,7 +1,7 @@
 <!--pages/welcome/welcome.wxml-->
 <view class="container">
 
-  <form bindsubmit="setInfo" style="width:100%">
+  <form bindsubmit="setInfo" report-submit='true' style="width:100%">
     <view class="divider"></view>
     <view class="section">
       <view class="section_title">姓名</view>
@@ -55,9 +55,8 @@
     </view>
   </form>
 
-  <text class="tip" style="margin:20rpx;margin-bottom:5rpx;font-size:13px">○ 如果注册遇到问题，请联系社长。</text>
-  <text class="tip" style="margin:5rpx;font-size:13px">○ 你的联系方式将用来通知社团的后续活动，请确保联系方式准确无误，若信息有变动，请联系18862196504（杨增）进行更改。</text>
-  <text class="tip" style="margin:5rpx;font-size:13px">○ 床协QQ主页号3173396816，社长联系方式：18896590313（王伟杰） 18862398390（杨越） 18862196504（杨增）</text>
+  <text class="tip" style="margin:20rpx;margin-bottom:5rpx;font-size:13px">○ 微信公众号：szdxcx QQ主页号：3173396816</text>
+  <text class="tip" style="margin:5rpx;font-size:13px">○ 社长联系方式：18896590313（王伟杰）</text>
 
 
 </view>

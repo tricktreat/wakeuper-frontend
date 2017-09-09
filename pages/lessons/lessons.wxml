@@ -1,0 +1,22 @@
+<!--pages/lessons/lessons.wxml-->
+<view class="container">
+  <view wx:if="{{kcxx}}" style="margin-top:40rpx;font-size:18px;font-weight:600;color:#9966CC">
+    今日课程</view>
+  <view wx:for="{{kcxx}}">
+    <view bindlongtap="showinfo" bindtap="sign" data-kcdm="{{item.kcdm}}" data-jsxm="{{item.jsxm}}" data-kssj="{{item.kssj}}" data-qddd="{{item.skdd}}" data-kcmc="{{item.kcmc}}" class="item">
+      <view class="kcmc">
+        {{item.kcmc}}({{item.kcdm}})
+      </view>
+      <view class="skdd">
+        {{item.skdd}}
+      </view>
+      <view class="kssj">
+        {{item.kssj}}
+      </view>
+      <view class="jsxm">
+        {{item.jsxm}}
+      </view>
+    </view>
+  </view>
+    <text style=' position:fixed;bottom:40rpx;color:gray;font-size:14px;'>界面正在开发之中....</text>
+</view>

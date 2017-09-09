@@ -13,7 +13,6 @@ page {
   align-items: center;
   color: grey;
   font-size: 14px;
-  border-left: #f7982a solid 10rpx;
   width: 100%;
 }
 

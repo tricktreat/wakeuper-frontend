@@ -1,5 +1,6 @@
 <!--pages/rankinfo/rankinfo.wxml-->
 <view class="container">
+<view bindtap="change" class="classname">{{tip}}</view>
   <view class="" wx:for="{{rankinfo}}">
     <view class="rank">
       <image class="avatar" src="{{item.avatarurl}}"></image>
@@ -11,4 +12,5 @@
       </view>
     </view>
   </view>
+  <text style=' position:fixed;bottom:40rpx;color:gray;font-size:14px;'>界面正在开发之中....</text>
 </view>

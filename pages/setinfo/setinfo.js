@@ -43,7 +43,6 @@ Page({
 
   },
   setInfo: function (e) {
-    console.log('表单数据为---', e.detail.value)
     e.detail.value['openid'] = this.data.userInfo.openid     //将openid放入表单信息中，之后一起提交到服务器
     if (e.detail.value['pwd']) {
       e.detail.value['pwd'] = util.md5(e.detail.value['pwd'])     //如果更新密码，则对表单填入的新密码加密
@@ -59,7 +58,6 @@ Page({
           Object.assign(app.globalData.userInfo, e.detail.value)  //更新表单数据到全局变量
           wx.showToast({
             title: '修改成功',
-            image: '../../images/biaoxingfill.png',
             duration: 1000,
             mask: true,
             success: function () {
@@ -73,6 +71,7 @@ Page({
         } else {
           wx.showToast({
             title: '修改失败',
+            mask: true,            
             icon: '',
             image: '../../images/biaoxingfill.png',
             duration: 1000

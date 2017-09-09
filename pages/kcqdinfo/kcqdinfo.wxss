@@ -1,0 +1,21 @@
+/* pages/kcqdinfo/kcqdinfo.wxss */
+.item{
+  border: solid #9966CC 2px;
+  margin: 20rpx;
+  padding: 20rpx;
+  box-sizing: border-box;
+  width: 700rpx;
+  color: black;
+  border-radius: 10rpx;
+  background: seashell
+}
+.title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  font-weight: 600;
+  border-bottom: solid 1px #9966CC;
+  padding: 10rpx;
+  font-size: 18px;
+}
